@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android"
+        id="cordova-plugin-mendix"
+        version="1.0.0">
+    <name>MendixCordovaPlugin</name>
+    <description>A Cordova wrapper for mendix-hybrid-app-base</description>
+
+    <dependency id="cordova-plugin-zip" />
+
+    <js-module src="www/mx.js" name="mxApp">
+        <clobbers target="mxApp" />
+    </js-module>
+
+    <platform name="ios" />
+    <platform name="android" />
+</plugin>
