@@ -1,0 +1,20 @@
+{
+  "name": "cordova-plugin-mendix",
+  "version": "1.0.0",
+  "description": "A Cordova wrapper for mendix-hybrid-app-base",
+  "main": "www/mx.js",
+  "scripts": {
+    "build": "webpack"
+  },
+  "keywords": [
+    "cordova",
+    "mendix"
+  ],
+  "author": "Dion Gerritzen",
+  "license": "ISC",
+  "devDependencies": {
+    "mendix-hybrid-app-base": "^2.0.5",
+    "webpack": "^4.6.0",
+    "webpack-cli": "^2.1.2"
+  }
+}
