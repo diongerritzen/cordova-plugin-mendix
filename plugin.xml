@@ -6,6 +6,8 @@
     <name>MendixCordovaPlugin</name>
     <description>A Cordova wrapper for mendix-hybrid-app-base</description>
 
+    <dependency id="cordova-plugin-zip" />
+
     <js-module src="www/mx.js" name="mxApp">
         <clobbers target="mxApp" />
     </js-module>

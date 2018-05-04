@@ -1,4 +1,5 @@
 var path = require("path");
+var I18nPlugin = require("i18n-webpack-plugin");
 var UglifyJSPlugin = require('uglifyjs-webpack-plugin');
 var webpack = require("webpack");
 
@@ -11,7 +12,9 @@ module.exports = function() {
     },
     output: {
       path: path.resolve("www"),
-      filename: "mx.js"
+      filename: "mx.js",
+      library: "mxApp",
+      libraryTarget: "umd"
     },
     devtool: "source-map",
     module: {
@@ -35,8 +38,8 @@ module.exports = function() {
       ]
     },
     plugins: [
-      new UglifyJSPlugin({
-        sourceMap: true
+      new I18nPlugin(utils.loadConfiguration("./node_modules/mendix-hybrid-app-base/config/texts.json"), {
+        hideMessage: true
       })
     ]
   };
