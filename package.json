@@ -1,6 +1,6 @@
 {
   "name": "cordova-plugin-mendix",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A Cordova wrapper for mendix-hybrid-app-base",
   "cordova": {
     "id": "cordova-plugin-mendix",
