@@ -2,7 +2,7 @@
 
 <plugin xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android"
         id="cordova-plugin-mendix"
-        version="1.0.0">
+        version="1.0.1">
     <name>MendixCordovaPlugin</name>
     <description>A Cordova wrapper for mendix-hybrid-app-base</description>
 
